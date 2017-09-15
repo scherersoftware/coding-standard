@@ -12,10 +12,22 @@
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
 
-    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/ReturnTypeHintSpacingSniff.php"/>
-    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/TypeHintDeclarationSniff.php"/>
+    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/ReturnTypeHintSpacingSniff.php">
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableParameterTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversablePropertyTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableReturnTypeHintSpecification"/>
+    </rule>
+
+    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/TypeHintDeclarationSniff.php">
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableParameterTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversablePropertyTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableReturnTypeHintSpecification"/>
+    </rule>
+
     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/LongTypeHintsSniff.php"/>
     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/ControlStructures/YodaComparisonSniff.php"/>
+    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/NameSpaces/UnusedUsesSniff.php"/>
+    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/Classes/UnusedPrivateElementsSniff.php"/>
 
     <rule ref="PSR2">
         <exclude name="PSR2.Classes.PropertyDeclaration"/>
