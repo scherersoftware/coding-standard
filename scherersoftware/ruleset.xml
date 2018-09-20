@@ -2,7 +2,7 @@
 <ruleset name="scherer software Coding Standard">
     <arg name="extensions" value="php,ctp,js,css"/>
     <arg name="colors"/>
-    <arg value="np"/>
+    <arg value="p"/>
 
     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/TypeHints/DeclareStrictTypesSniff.php" />
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
