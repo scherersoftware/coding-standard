@@ -4,6 +4,6 @@
     "description": "scherer software coding standard.",
     "require": {
         "php": ">=7.1",
-        "slevomat/coding-standard": "~3.0"
+        "slevomat/coding-standard": "~4.0"
     }
 }

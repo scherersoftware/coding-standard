@@ -38,4 +38,6 @@
     <rule ref="PSR2.Files.ClosingTag">
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
+
+    <rule ref="Squiz.Arrays.ArrayDeclaration.NoComma"/>
 </ruleset>
