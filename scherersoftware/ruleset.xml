@@ -32,12 +32,16 @@
     <rule ref="PSR2">
         <exclude name="PSR2.Classes.PropertyDeclaration"/>
         <exclude name="PSR2.Methods.MethodDeclaration"/>
-        <!-- checked in SchererSoftware.SlevomatCodingStandard.ControlStructures.LenientControlSignatureSniff  -->
-        <exclude name="Squiz.ControlStructures.ControlSignature"/>
     </rule>
     <rule ref="PSR2.Files.ClosingTag">
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
 
     <rule ref="Squiz.Arrays.ArrayDeclaration.NoComma"/>
+
+    <rule ref="Squiz.ControlStructures.ControlSignature">
+        <properties>
+            <property name="requiredSpacesBeforeColon" value="0"/>
+        </properties>
+    </rule>
 </ruleset>
