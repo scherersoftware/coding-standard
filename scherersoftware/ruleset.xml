@@ -7,6 +7,7 @@
     <!-- define path to slevomat coding standard to make SlevomatCodingStandard namespace known -->
     <config name="installed_paths" value="vendor/slevomat/coding-standard"/>
 
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
@@ -49,8 +50,6 @@
     <rule ref="PSR2.Files.ClosingTag">
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
-
-    <rule ref="Squiz.Arrays.ArrayDeclaration.NoComma"/>
 
     <rule ref="Squiz.ControlStructures.ControlSignature">
         <properties>
