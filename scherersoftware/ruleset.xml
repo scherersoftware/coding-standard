@@ -8,10 +8,25 @@
     <config name="installed_paths" value="vendor/slevomat/coding-standard"/>
 
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing"/>
+
+    <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
+        <properties>
+            <property name="forbiddenAnnotations" type="array">
+                <element value="@author"/>
+                <element value="@created"/>
+                <element value="@version"/>
+            </property>
+        </properties>
+    </rule>
+
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
+
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
 
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
@@ -31,6 +46,7 @@
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
@@ -41,12 +57,14 @@
         <exclude
                 name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableReturnTypeHintSpecification"/>
     </rule>
+
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
 
     <rule ref="PSR2">
         <exclude name="PSR2.Classes.PropertyDeclaration"/>
         <exclude name="PSR2.Methods.MethodDeclaration"/>
     </rule>
+
     <rule ref="PSR2.Files.ClosingTag">
         <exclude-pattern>*.ctp</exclude-pattern>
     </rule>
