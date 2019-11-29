@@ -107,4 +107,8 @@
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue.NullabilitySymbolRequired">
         <exclude-pattern>*</exclude-pattern>
     </rule>
+
+    <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing.IncorrectLinesCountBeforeFirstUse">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
 </ruleset>
