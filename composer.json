@@ -4,6 +4,7 @@
     "description": "scherer software coding standard.",
     "require": {
         "php": ">=7.2",
-        "slevomat/coding-standard": "~5.0"
+        "slevomat/coding-standard": "~5.0",
+        "cakephp/cakephp-codesniffer": "^4.0.0-beta4"
     }
 }
