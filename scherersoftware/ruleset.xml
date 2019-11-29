@@ -96,12 +96,11 @@
         </properties>
     </rule>
 
-    <!-- These rules conflict with our standard defined in scherer software ruleset -->
-    <rule ref="PSR12.Files.DeclareStatement">
-        <exclude-pattern>*</exclude-pattern>
-    </rule>
-    <rule ref="PSR12.Files.FileHeader.SpacingAfterBlock">
-        <exclude-pattern>*</exclude-pattern>
+    <rule ref="PSR12">
+        <!-- These rules conflict with our better standard and sense of aesthetics -->
+        <exclude name="PSR12.Files.DeclareStatement"/>
+        <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/>
+        <exclude name="PSR12.Traits.UseDeclaration.UseAfterBrace"/>
     </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue.NullabilitySymbolRequired">
@@ -109,6 +108,9 @@
     </rule>
 
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing.IncorrectLinesCountBeforeFirstUse">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace">
         <exclude-pattern>*</exclude-pattern>
     </rule>
 </ruleset>
