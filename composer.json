@@ -6,5 +6,7 @@
         "php": ">=7.2",
         "slevomat/coding-standard": "~5.0",
         "cakephp/cakephp-codesniffer": "^4.0.0-beta4"
-    }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
 }
