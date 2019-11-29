@@ -92,4 +92,9 @@
             <property name="requiredSpacesBeforeColon" value="0"/>
         </properties>
     </rule>
+
+    <!-- These rules conflict with our standard defined in scherer software ruleset -->
+    <rule ref="PSR12.Files.DeclareStatement">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
 </ruleset>
