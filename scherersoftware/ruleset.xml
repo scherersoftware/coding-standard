@@ -99,4 +99,7 @@
     <rule ref="PSR12.Files.DeclareStatement">
         <exclude-pattern>*</exclude-pattern>
     </rule>
+    <rule ref="PSR12.Files.FileHeader.SpacingAfterBlock">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
 </ruleset>
